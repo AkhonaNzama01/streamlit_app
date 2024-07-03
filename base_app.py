@@ -27,10 +27,10 @@ import joblib
 from PIL import Image
 
 # Paths to models and vectorizer
-vectorizer_path = "C:/Users/sthok/Desktop/my-streamlit-app/vectorizer.pkl"
-logistic_regression_path = "C:/Users/sthok/Desktop/my-streamlit-app/logistic_regression.pkl"
-naive_bayes_path = "C:/Users/sthok/Desktop/my-streamlit-app/naive_bayes.pkl"
-gradient_boosting_path = "C:/Users/sthok/Desktop/my-streamlit-app/gradient_boosting.pkl"
+vectorizer_path = "C:\Users\sthok\Desktop\streamlit_app-1\vectorizer.pkl"
+logistic_regression_path = "C:\Users\sthok\Desktop\streamlit_app-1\logistic_regression.pkl"
+naive_bayes_path = "C:\Users\sthok\Desktop\streamlit_app-1\naive_bayes.pkl"
+gradient_boosting_path = "C:\Users\sthok\Desktop\streamlit_app-1\gradient_boosting.pkl"
 
 # Load vectorizer and models
 vectorizer = joblib.load(vectorizer_path)
