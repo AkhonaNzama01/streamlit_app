@@ -27,16 +27,19 @@ import joblib
 from PIL import Image
 
 # Paths to models and vectorizer
-vectorizer_path = "C:/Users/sthok/Desktop/streamlit_app-1/vectorizer.pkl"
-logistic_regression_path = "C:/Users/sthok/Desktop/streamlit_app-1/logistic_regression.pkl"
-naive_bayes_path = "C:/Users/sthok/Desktop/streamlit_app-1/naive_bayes.pkl"
-gradient_boosting_path = "C:/Users/sthok/Desktop/streamlit_app-1/gradient_boosting.pkl"
+vectorizer_path = "C:\Users\sthok\Downloads\streamlit_app\vectorizer.pkl"
+logistic_regression_path = "C:/Users/sthok/Downloads/streamlit_app/logistic_regression.pkl"
+naive_bayes_path = "C:/Users/sthok/Downloads/streamlit_app/naive_bayes.pkl"
+gradient_boosting_path = "C:/Users/sthok/Downloads/streamlit_app/gradient_boosting.pkl"
 
 # Load vectorizer and models
-vectorizer = joblib.load(vectorizer_path)
-logistic_regression_model = joblib.load(logistic_regression_path)
-naive_bayes_model = joblib.load(naive_bayes_path)
-gradient_boosting_model = joblib.load(gradient_boosting_path)
+try:
+    vectorizer = joblib.load(vectorizer_path)
+    logistic_regression_model = joblib.load(logistic_regression_path)
+    naive_bayes_model = joblib.load(naive_bayes_path)
+    gradient_boosting_model = joblib.load(gradient_boosting_path)
+except Exception as e:
+    st.error(f"Error loading models: {e}")
 
 # Dictionary for mapping predictions to categories
 category_dict = {0: "Business", 1: "Technology", 2: "Sports", 3: "Education", 4: "Entertainment"}
