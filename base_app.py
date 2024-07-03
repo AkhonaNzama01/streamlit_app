@@ -27,7 +27,8 @@ import joblib
 from PIL import Image
 
 # Paths to models and vectorizer
-vectorizer_path = "C:\Users\sthok\Downloads\streamlit_app\vectorizer.pkl"
+vectorizer_path = "vectorizer.pkl"
+
 logistic_regression_path = "C:/Users/sthok/Downloads/streamlit_app/logistic_regression.pkl"
 naive_bayes_path = "C:/Users/sthok/Downloads/streamlit_app/naive_bayes.pkl"
 gradient_boosting_path = "C:/Users/sthok/Downloads/streamlit_app/gradient_boosting.pkl"
